@@ -1,0 +1,22 @@
+package Launch_Browser;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Test3 {
+	public static void main(String[] args) {
+		
+		//para1- name of browser...para2-path of browser .exe fime
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver_win32\\chromedriver.exe");
+		
+		//Create object of cromedriver class and provide reference of WebDriver interface(upcasting)
+
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.kesari.in/login");
+		//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver_win32\\chromedriver.exe");
+        //Classname.methodname which is static methd("name of browser","path of browser.exe file);
+		
+	}
+
+}
